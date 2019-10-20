@@ -43,19 +43,20 @@ public class TestingController {
 		testing.setDate(new Date());
 		testing.setFileName(file.getOriginalFilename());
 		
-		testingService.save(testingForm);
-		
 		ModelAndView mv = new ModelAndView();
 		mv.setViewName("createTesting");
 		
 		boolean result = true;
 		/* write code to use jar files here*/
-		testing.setResult(result?"Success":"Failed");
 		if(result) {
 			mv.addObject("message", "Test Success!");
+			testing.setResult("Success!");
 		} else {
 			mv.addObject("message", "Test Failed :(");
+			testing.setResult("Failed :(");
 		}
+		
+		testingService.save(testingForm);
 		
 		return mv;
 	}

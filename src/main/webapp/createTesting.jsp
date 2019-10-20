@@ -1,11 +1,16 @@
 <%@ include file="header.jspf" %> 
-
+<script type="text/javascript" src="resources/js/myjs.js"></script>
+<script>
+window.onload = function() {
+	setNavActive("createTesting");
+}
+</script>
 <div class="container">
 <div class="row">
-<div class="col-12" style="align:center"><h4>${message}</h4></div>
+
 <div class="col-4"></div>
 <div class="col-4">
-
+	<div style="align:center"><h4>${message}</h4></div>
 	
     <form:form method="POST" action="${contextPath}/createTesting" modelAttribute="testingForm" class="form-signin" enctype="multipart/form-data">
         <span>Upload File:</span>
@@ -52,9 +57,5 @@
 </div>
 </div>
 </div><!-- /container -->
-<script>
-window.onload = function() {
-	setNavActive("createTesting");
-}
-</script>
+
 <jsp:include page="footer.jsp"/>

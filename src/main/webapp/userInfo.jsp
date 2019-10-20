@@ -1,4 +1,10 @@
 <%@ include file="header.jspf" %> 
+<script type="text/javascript" src="resources/js/myjs.js"></script>
+<script>
+window.onload = function() {
+	setNavActive("userInfo");
+}
+</script>
 
 <div class="container">
 <div class="row">
@@ -32,9 +38,5 @@
 </div>
 </div>
 </div><!-- /container -->
-<script>
-window.onload = function() {
-	setNavActive("userInfo");
-}
-</script>
+
 <jsp:include page="footer.jsp"/>
