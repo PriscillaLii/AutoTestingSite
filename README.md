@@ -19,14 +19,13 @@
 2. 确认MySQL Server或者MariaDB Server正在运行。建一个Schema命名为AutoTestingSite
 3. 修改：
   1）src/main/resources/application.properties：
-     spring.datasource.username=
-     spring.datasource.password=
-     spring.datasource.url=jdbc:mysql://localhost:3306/AutoTestingSite?serverTimezone=CST 这个不改也不影响运行
+      spring.datasource.username=
+      spring.datasource.password=
+      spring.datasource.url=jdbc:mysql://localhost:3306/AutoTestingSite?serverTimezone=CST 这个不改也不影响运行
   2）controller/TestingController.java：
-     Line 29: UPLOADED_FOLDER 改成你的本地路径
+      Line 29: UPLOADED_FOLDER 改成你的本地路径
 4. 右键WebApplication.java -> Run As -> Java Application
-5. 打开localhost:8080
-然后它就跑起来啦！
+5. 打开localhost:8080, 然后它就跑起来啦！
 
 #### To Do:
 1. TestingController.java 
