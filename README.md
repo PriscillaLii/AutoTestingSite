@@ -19,20 +19,20 @@
 2. 确认MySQL Server或者MariaDB Server正在运行。建一个Schema命名为AutoTestingSite
 3. 修改：
   1）src/main/resources/application.properties：
-      spring.datasource.username=
-      spring.datasource.password=
-      spring.datasource.url=jdbc:mysql://localhost:3306/AutoTestingSite?serverTimezone=CST 这个不改也不影响运行
-  2）controller/TestingController.java：
-      Line 29: UPLOADED_FOLDER 改成你的本地路径
+      ·spring.datasource.username=    
+      ·spring.datasource.password=    
+      ·spring.datasource.url=jdbc:mysql://localhost:3306/AutoTestingSite?serverTimezone=CST 这个不改也不影响运行    
+  2）controller/TestingController.java：    
+      ·Line 29: UPLOADED_FOLDER 改成你的本地路径
 4. 右键WebApplication.java -> Run As -> Java Application
 5. 打开localhost:8080, 然后它就跑起来啦！
 
 #### To Do:
 1. TestingController.java 
-  line 50: 把运行截图的代码放在这里
-  第49行的Result也要根据运行结果修改
+  ·line 50: 把运行截图的代码放在这里   
+  ·第49行的Result也要根据运行结果修改   
 2. testingHistory.jsp
-  目前还没有那个删除和导出的按钮，毕竟还没能运行那个截图软件。。以后加上。。
+  ·目前还没有那个删除和导出的按钮，毕竟还没能运行那个截图软件。。以后加上。。   
 3. UserValidator.java
-  validateChange这个method里，要是有时间的话可以想想该怎么测试老密码是否输入正确。没时间就别管了，反正能糊弄过去
+  ·validateChange这个method里，要是有时间的话可以想想该怎么测试老密码是否输入正确。没时间就别管了，反正能糊弄过去
 
