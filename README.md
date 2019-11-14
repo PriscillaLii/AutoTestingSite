@@ -1,5 +1,5 @@
 # Auto Testing Site
-### This repository is for personal record keeping porpuse only. 
+### This repository is for personal record keeping purpose only. 
 ================================
 
 #### Application Requires/Java Dependencies:
@@ -21,9 +21,9 @@
 2. 确认MySQL Server或者MariaDB Server正在运行。建一个Schema命名为AutoTestingSite
 3. 修改：
   1）src/main/resources/application.properties：
-      ·spring.datasource.username=    
-      ·spring.datasource.password=    
-      ·spring.datasource.url=jdbc:mysql://localhost:3306/AutoTestingSite?serverTimezone=CST 这个不改也不影响运行    
+     ·spring.datasource.username=   
+     ·spring.datasource.password=   
+     ·spring.datasource.url=jdbc:mysql://localhost:3306/AutoTestingSite?serverTimezone=CST 这个不改也不影响运行    
   2）controller/TestingController.java：    
       ·Line 29: UPLOADED_FOLDER 改成你的本地路径
   3）必要的话，给项目改个你喜欢的名字，还有package名也可以改改
@@ -34,7 +34,7 @@
 #### To Do:
 1. TestingController.java 
   ·line 50: 把运行截图的代码放在这里   
-  ·第49行的Result也要根据运行结果修改   
+   ·第49行的Result也要根据运行结果修改   
 2. testingHistory.jsp
   ·目前还没有那个删除和导出的按钮，毕竟还没能运行那个截图软件。。以后加上。。   
 3. UserValidator.java
