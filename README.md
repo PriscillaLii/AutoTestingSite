@@ -1,4 +1,5 @@
 # Auto Testing Site
+### This repository is for personal record keeping porpuse only. 
 ================================
 
 #### Application Requires/Java Dependencies:
